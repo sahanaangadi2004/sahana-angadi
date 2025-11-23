@@ -1,2 +1,3 @@
 this is new file
-apple
+apple is a fruit
+
