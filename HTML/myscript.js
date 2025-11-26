@@ -1,11 +1,11 @@
-var dayno=5
+var dayno=0
 if(dayno==0)
 {
-    console.log("sunday")
+    document.writeln("sunday")
 }
 else if(dayno==1)
 {
-    console.log("monday")
+    alert("monday")
 }
 else if(dayno==2)
 {
@@ -23,4 +23,12 @@ else if(dayno==4)
 else if(dayno==5)
 {
     console.log("friday")
+}
+else if(dayno==6)
+{
+    console.log("saturday")
+}
+else (dayno==7)
+{
+    console.log("default")
 }
