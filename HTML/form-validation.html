@@ -1,0 +1,68 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+       Name: <input type="text" id="tbname" class="" name="tbname" required> <br>
+         Email:<input type="email" id="tbemail" class="" name="tbemail"  required> <br>
+       Phone<input type="number" id="tbage" class="" name="tbage" required> <br>  
+        <input type="submit" value="Submit" onclick="validateForm()">
+    </form>
+    <script>
+        function validatename(){
+            debugger;
+            var name=document.getElementById("tbname").value;
+            var nameRegex = /^[A-Za-z' -]+$/;
+            if(nameRegex.test(name)){
+                alert("Name is valid");
+                return true;
+               
+            }
+            else{
+                alert("Name is not valid")
+                return false;
+            }
+            
+
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+</head>
+
+<body>
+  <form onsubmit="return validatename()">
+    Name: <input type="text" id="tbname" name="tbname" required> <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validatename() {
+      var name = document.getElementById("tbname").value;
+      var nameRegex = /^[A-Za-z]{3}$/;
+
+      if (nameRegex.test(name)) {
+        alert("Name is valid");
+        return true;
+      } else {
+        alert("Name is not valid");
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>

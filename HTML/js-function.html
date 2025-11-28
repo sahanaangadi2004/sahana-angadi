@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Num1: <input type="text" id="tbnum1" class="" name="">
+    <br>
+   Num2: <input type="text" id="tbnum2" class="" name="">
+    <br>
+    <input type="submit" name="" id="" value="Add" onclick="add()">
+   
+    <script>
+        function add()
+        {
+            objnum1=document.getElementById("tbnum1");
+            objnum2=document.getElementById("tbnum2");
+            objres=document.getElementById("res");
+            document.write("The sum is: " + (parseInt(objnum1.value) + parseInt(objnum2.value)));
+        }
+    //     function addition(a, b){
+    //        document.write("The sum is: " + (a + b));
+    //     }
+    //     // addition(5, 10); 
+    //     // addition(20, 30);
+    // </script>
+</body>
+</html>

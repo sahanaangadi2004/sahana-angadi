@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Smallest Number</title>
+</head>
+<body>
+    <h1>Find the Smallest Number</h1>
+    First Num: <input type="number" id="num1" placeholder="Enter first number"> <br>
+    Second Num:<input type="number" id="num2" placeholder="Enter second number"> <br>
+    Third Num:<input type="number" id="num3" placeholder="Enter third number"> <br>
+    <!-- <button onclick="findSmallest()">Find Smallest</button> -->
+    <input type="submit" name="" id="" value="findsmallest" onclick="findSmallest()">
+    <br>
+    
+    <h3>Smallest Number: <span id="result"></span></h3>
+    <script>
+        function findSmallest() {
+             objnum1 = parseFloat(document.getElementById("num1").value);
+             objnum2 = parseFloat(document.getElementById("num2").value);
+             objnum3 = parseFloat(document.getElementById("num3").value);
+            
+            if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+                document.getElementById("result").textContent = "Please enter all three numbers";
+                return;
+            }
+            
+            objsmallest = Math.min(num1, num2, num3);
+            document.getElementById("result").textContent = smallest;
+        }
+    </script>
+</body>
+</html>
